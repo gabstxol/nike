@@ -1,6 +1,8 @@
 body,html{
-    height:100%;
+    height:300%;
     width:100%;
+    font-family: "Inter",serif;
+
 }
 header{
     height:60px;
@@ -27,14 +29,19 @@ header{
     align-items: center;
     padding: 20px;
     gap:20px;
+
+}
+#textos:hover{
+    text-decoration:underline;
 }
 #img-cima{
 height:150%;
 position: absolute;
 left:30%;
-top:-20%;
+top:-30%;
 background-position: center;
 background-size:cover;
+z-index:400;
 }
 #topo{
     height:447px;
@@ -42,7 +49,138 @@ background-size:cover;
 background-color:#E5E5E5 ;
 position:absolute;
 left:0;
-
+box-shadow: 0px 10px 20px inset;
+}
+#circulo{
+    height:400px;
+    background-color: #758874;
+    width:400px;
+    border-radius: 50%;
+    position:absolute;
+    left:37%;
+    top:10%;
+}
+#nike-text,#nike-textli{
+    color:white;
+    font-family: "Inter",serif;
+    font-size:80px;
+    font-weight:bold;
+    position: absolute;
+    left:15%;
+    z-index:300;
+    top:10%;
+    transition: all 0.5s ease-in-out;
+}
+#nike-text:hover,#nike-textli:hover{
+    color: black;
+}
+#nike-textli{
+    color:transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    
+}
+#img-cima:hover{
+    transform: rotate(-27deg);
+    transition: all 0.5s ease-in-out;
 
 }
+#middle{
+    position:absolute;
+    top:90%;
+    height:200px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#middle h1{
+    position: absolute;
+    top:-20px;
+    font-size:70px;
+    font-family: 'Arial';
+}
+#middle p{
+    position: absolute;
+    top:100px;
+    font-size:20px;
+    width:700px;
+    display: center;
 
+}
+#comprar{
+    background-color:black;
+    width:100px;
+    color:white;
+    font-weight:1px solid white;
+    border:none;
+    border-radius:20px;
+    height:40px;
+    font-size:15px;
+    position: absolute;
+    top:90%;
+
+}
+#menu{
+    position:absolute;
+    left:35%;
+    z-index:1000;
+    font-size:15px;
+    font-weight:1px solid;
+    display:none;
+}
+@media (max-width:768px){
+    header{
+        width:200%;
+    }
+    #img-cima{
+        height:120%;
+        top:-10%;
+        left:5%;
+    }
+    #circulo{
+        height:300px;
+        width:300px;
+        top:20%;
+        left:20%;
+    }
+    #topo{
+        width:200%;
+    }
+    #nike-text,#nike-textli{
+        font-size:70px;
+        position: absolute;
+        left:20%;
+        top:5%;
+    }
+    #nike-textli{
+        z-index: 10000;
+    }
+    #middle{
+        position:absolute;
+        top:90%;
+        height:500px;
+        width:200%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #middle h1{
+        position: absolute;
+        top:-20px;
+        top:3%;
+        font-size:30px;
+        font-family: 'Arial';
+    }
+    #middle p{
+        position: absolute;
+        top:100px;
+        font-size:20px;
+        width:400px;
+        top:10%;
+        display: center;
+}
+#comprar{
+    top:40%;
+}
+}

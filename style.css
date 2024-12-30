@@ -3,5 +3,46 @@ body,html{
     width:100%;
 }
 header{
-    
+    height:60px;
+    width:100%;
+    background-color:white;
+    position: absolute;
+    margin:0;
+    top:0;
+    left:0;
+    font-family: "Inter",serif;
+    font-weight:bold;
+    color:black;
+    z-index:100;
 }
+#logo{
+    height:80px;
+    position:absolute;
+    left:5%;
+}
+#textos{
+    font-size:13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap:20px;
+}
+#img-cima{
+height:150%;
+position: absolute;
+left:30%;
+top:-20%;
+background-position: center;
+background-size:cover;
+}
+#topo{
+    height:447px;
+    width:100%;
+background-color:#E5E5E5 ;
+position:absolute;
+left:0;
+
+
+}
+

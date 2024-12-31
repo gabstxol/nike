@@ -120,6 +120,10 @@ box-shadow: 0px 10px 20px inset;
     top:90%;
 
 }
+#comprar:hover{
+    color:black;
+    background-color: #d6d0d0;
+}
 #menu{
     position:absolute;
     left:35%;
@@ -127,6 +131,24 @@ box-shadow: 0px 10px 20px inset;
     font-size:15px;
     font-weight:1px solid;
     display:none;
+}
+#black{
+    position:absolute;
+    z-index:2000;
+    height:480px;
+    width:100%;
+    background-color:#000000;
+    top:130%;
+    left:0;
+
+}
+#primeiro-video{
+    position:absolute;
+    left:-40%;
+}
+#segundo-video{
+    position:absolute;
+    left:-20%;
 }
 @media (max-width:768px){
     header{

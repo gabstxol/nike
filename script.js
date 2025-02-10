@@ -11,3 +11,19 @@ select.addEventListener('click',()=>{
 
     }
 })
+const lista = document.getElementById('lista');
+const btnEsquerdo = document.getElementById('click-esquerdo');
+const btnDireito = document.getElementById('click-direito');
+let leftValue = 0; // Valor inicial de `left`
+
+btnEsquerdo.addEventListener('click', () => {
+    leftValue -= 10; // Diminui 10%
+    lista.style.left = `${leftValue}%`;
+    lista.style.transition = "all 0.5s ease-in-out";
+});
+
+btnDireito.addEventListener('click', () => {
+    leftValue += 10; // Aumenta 10%
+    lista.style.left = `${leftValue}%`;
+    lista.style.transition = "all 0.5s ease-in-out";
+});
